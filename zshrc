@@ -34,6 +34,8 @@ unset LC_CTYPE
 eval $(lesspipe)
 
 # Show a fortune cookie.
-echo
-fortune /usr/share/games/fortunes/*.fortunes
-echo
+if which fortune >/dev/null; then
+    echo
+    fortune /usr/share/games/fortunes/*.fortunes
+    echo
+fi
