@@ -40,6 +40,6 @@ eval $(lesspipe)
 # Show a fortune cookie.
 if which fortune >/dev/null; then
     echo
-    fortune /usr/share/games/fortunes/*.fortunes
+    fortune /usr/share/games/fortunes/es/*.fortunes
     echo
 fi
